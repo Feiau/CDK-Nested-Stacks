@@ -1,9 +1,8 @@
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import * as iam from 'aws-cdk-lib/aws-iam'
 
-export class baseResources extends cdk.NestedStack {   // VPC/SG stack
+export class baseResources extends cdk.NestedStack {   // VPC&SG stack
     public readonly vpc: ec2.IVpc;
     public readonly applicationSg: ec2.ISecurityGroup;
 
